@@ -18,8 +18,12 @@ set foldlevelstart=10
 set foldnestmax=10
 set cursorline
 set cindent
-set background=dark
-colorscheme calmar256-dark
+"set background=dark
+"let g:solarized_termcolors=256
+"colorscheme solarized
+"colorscheme calmar256-dark
+colorscheme cyberpunk
+:imap <C-BS> <C-W>
 "VUNDLE CONFIG
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -32,7 +36,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scroloose/nerdtree'
+Plugin 'jiangmiao/auto-pairs'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
